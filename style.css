@@ -12,10 +12,6 @@
   --fw-bold: 600;
 }
 
-/**********
-         css resets
-         **********/
-
 *,
 *::before,
 *::after {
@@ -60,79 +56,4 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-}
-
-/***************
-          general styling
-          ***************/
-
-body {
-  background: var(--Violet);
-  font-family: var(--ff-regular);
-  text-align: center;
-  color: white;
-}
-.main {
-  background: url(../images/bg-mobile.svg);
-  background-repeat: no-repeat;
-}
-.intro-section {
-  min-height: 100vh;
-  min-height: 100dvh;
-  width: 80%;
-  margin-inline: auto;
-  padding-block: 2rem;
-}
-
-.img-group {
-  margin-bottom: 4em;
-}
-
-.logo {
-  width: 50%;
-  margin-bottom: 3.5em;
-}
-
-.content-group {
-
-}
-
-.intro-title{
-  font-family: var(--ff-headings);
-  font-weight: var(--fw-bold);
-  font-size: 1.7rem;
-  margin-bottom: 0.8em;
-}
-
-.intro-text{
-  font-size: 1rem;
-  margin-bottom: 2em;
-}
-
-.intro-button{
-  font-size: 0.825rem;
-  color: var(--Violet);
-  width: 80%;
-  margin-bottom: 7em;
-  padding-block: 0.825em;
-  border-radius: 4em;
-  place-self: center;
-  cursor: pointer;
-}
-
-.social-icons {
-  display: flex;
-  gap: 1em;
-  justify-content: center;
-}
-.social-icon {
-  position: relative;
-  filter: invert(100%);
-  aspect-ratio: 1;
-  width: 1.5rem;
-  border: 2px solid red;
-}
-.social-icon::before{
-  content: "cotop";
-  color: red;
 }
