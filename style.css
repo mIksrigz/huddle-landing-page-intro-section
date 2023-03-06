@@ -57,3 +57,40 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+body {
+  background: grey;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.social-link{
+  position: relative;
+  fill: rgb(255, 255, 255);
+}
+
+.social-link::before {
+ content: "";
+ position: absolute;
+ inset: -0.5rem 0 0 -0.5rem;
+ width: 2rem;
+ aspect-ratio: 1;
+ background: transparent;
+ border: 2px solid white;
+ border-radius: 50%;
+}
+
+.social-link:hover{
+  fill: var(--Soft-Magenta);
+}
+
+
+.ionicon {
+  width: 1rem;
+}
