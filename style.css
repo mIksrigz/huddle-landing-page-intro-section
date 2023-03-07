@@ -59,38 +59,97 @@ h6 {
 }
 
 body {
-  background: grey;
+  background:  var(--Violet);
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  color: white;
+  font-family: var(--ff-regular);
+  font-weight: var(--fw-regular);
+  font-size: 1rem;
+  text-align: center;
+}
+
+main{
+  display: grid;
+  gap: 5rem;
+  width: 80%;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+
+.logo-image{
+  width: 45%;
+}
+
+.main-image{
+  margin-top: 4rem;
+}
+
+h1{
+  font-family: var(--ff-headings);
+  font-weight: var(--fw-bold);
+  font-size: 1.625rem;
+}
+
+p{
+  margin-top: 0.875rem;
+}
+
+button{
+  margin-top: 1.25rem;
+  font-size: 0.8125rem;
+  background: white;
+  color: var(--Violet);
+  padding: 0.75em 6em;
+  border-radius: 5em;
+  cursor: pointer;
+  border: transparent;
+  transition: background 250ms ease-out,
+ color 250ms ease-out;
+}
+
+button:hover{
+  background: var(--Soft-Magenta);
   color: white;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 1.875rem;
+  margin-top: 4rem;
 }
 
 .social-link{
   position: relative;
   fill: rgb(255, 255, 255);
-}
-
-.social-link::before {
- content: "";
- position: absolute;
- inset: -0.5rem 0 0 -0.5rem;
- width: 2rem;
- aspect-ratio: 1;
- background: transparent;
- border: 2px solid white;
- border-radius: 50%;
+  border-radius: 50%;
+  outline: 1px solid white;
+  outline-offset: 0.4375rem;
+  transition: fill 250ms ease-out,
+  outline-color 250ms ease-out;
 }
 
 .social-link:hover{
   fill: var(--Soft-Magenta);
+  outline-color: var(--Soft-Magenta);
 }
 
 
 .ionicon {
-  width: 1rem;
+  width: 0.875rem;
+}
+
+footer{
+  margin-top: 4rem;
+}
+
+@media (min-width: 700px){
+  body{
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+  }
+  main{
+    grid-template-columns: 1fr 1fr;
+  }
 }
