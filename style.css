@@ -60,21 +60,22 @@ h6 {
 
 body {
   background:  var(--Violet);
-  background-image: url(../images/bg-mobile.svg);
-  background-repeat: no-repeat;
   color: white;
   font-family: var(--ff-regular);
   font-weight: var(--fw-regular);
-  font-size: 1rem;
+  font-size: 1.0625rem;
   text-align: center;
 }
 
 main{
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
   display: grid;
-  gap: 5rem;
-  width: 80%;
-  padding: 1.5rem 0;
+  gap: 3.75rem;
+  max-width: 600px;
+  min-height: 100vh;
   margin: 0 auto;
+  padding: 2rem 2.5rem;
 }
 
 .logo-image{
@@ -116,8 +117,8 @@ button:hover{
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 1.875rem;
-  margin-top: 4rem;
+  gap: 1.5rem;
+  margin-top: 6rem;
 }
 
 .social-link{
@@ -137,19 +138,78 @@ button:hover{
 
 
 .ionicon {
-  width: 0.875rem;
+  width: 0.9375rem;
 }
 
 footer{
   margin-top: 4rem;
 }
 
-@media (min-width: 700px){
+.attribution{
+  padding-block: 0 2rem;
+  font-size: 0.75rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a{
+  color: hsl(0, 0%, 80%);
+  transition: color 250ms ease-out;
+}
+
+.attribution a:hover{
+  color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 1000px){
   body{
-    background-image: url(../images/bg-desktop.svg);
-    background-repeat: no-repeat;
+    text-align: left;
+    font-size: 1.125rem;
   }
   main{
-    grid-template-columns: 1fr 1fr;
+    position: relative;
+    background-image: url(../images/bg-desktop.svg);
+    grid-template-columns: 4fr 3fr;
+    gap: 0;
+    place-items: center;
+    padding: 2.25rem 3rem;
+    max-width: var(--Desktop);
+  }
+
+  .logo-image{
+    width: 30%;
+    margin-bottom: 6rem;
+  }
+
+  .content-group{
+    width: 90%;
+    margin: 0 auto 0 1.5rem;
+  }
+
+  h1{
+    font-size: 2.5rem;
+  }
+
+  button{
+    font-size: 1.125rem;
+    padding: 0.75em 3.75em;
+  }
+
+  .social-icons{
+    position: absolute;
+    inset: auto 5rem 2.5rem auto;
+  }
+
+  .ionicon {
+    width: 1.5rem;
+  }
+
+  footer{
+    margin-top: 0;
+  }
+
+  .attribution{
+    padding-block: 1rem;
+    padding-inline: 4rem;
+    font-size: 0.8125rem;
   }
 }
