@@ -20,7 +20,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 
 ### Links
 
-- Solution URL: https://your-solution-url.com
+- Solution URL: https://www.frontendmentor.io/solutions/responsivehuddlelandingpageintrosection-i6_Ff7IRKs
 - Live Site URL: https://huddle-landing-page-intro.netlify.app/
 
 ### Built with
